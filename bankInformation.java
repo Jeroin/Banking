@@ -4,7 +4,7 @@ package objectOriented.Banking;
 
 public class bankInformation {
 	
-	private String cardverificationValue;
+	private String CardVerificationValue;
 	private int expirationDate;
 	private int securityCode;
 	private String cardHolder;
@@ -13,7 +13,7 @@ public class bankInformation {
 
 	//Creation
 	public bankInformation (String cardverificationValue, int expirationDate, int securityCode, String cardHolder){
-		this.cardverificationValue = cardverificationValue;
+		this.CardVerificationValue = cardverificationValue;
 		this.expirationDate = expirationDate;
 		this.securityCode = securityCode;
 		this.cardHolder = cardHolder;
@@ -22,13 +22,13 @@ public class bankInformation {
 
 
 	public String getCardverificationValue() {
-		return cardverificationValue;
+		return CardVerificationValue;
 	}
 
 
 
 	public void setCardverificationValue(String cardverificationValue) {
-		this.cardverificationValue = cardverificationValue;
+		this.CardVerificationValue = cardverificationValue;
 	}
 
 
@@ -68,7 +68,7 @@ public class bankInformation {
 	}
 	
 	public String toString() {
-		return String.format("[Card Verification Value: %s] [Expiration Date: %d] [Security Code: %d] [Card Holder: %s]", cardverificationValue, expirationDate, securityCode, cardHolder);
+		return String.format("[Card Verification Value: %s] [Expiration Date: %d] [Security Code: %d] [Card Holder: %s]", CardVerificationValue, expirationDate, securityCode, cardHolder);
 	}
 	
 }

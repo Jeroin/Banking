@@ -1,7 +1,10 @@
 package objectOriented.Banking;
 
-public class accountSignup {
+//import java.util.Scanner;
+
+public class signUp{
 	
+
 	 private String firstName;
 	 private String lastName;
 	 private String middleName;
@@ -9,16 +12,19 @@ public class accountSignup {
 	 private byte age;
 	 
 	 //Creation
-	 
-	 public accountSignup(String firstName, String lastName, String middleName, String gender, byte age) {
+	 public signUp(String firstName, String lastName, String middleName, String gender, byte age) {
 		 this.firstName = firstName;
 		 this.lastName = lastName;
 		 this.middleName = middleName;
 		 this.gender = gender;
 		 this.age = age;
 	 }
-	  
-
+	
+	 
+	
+	public void signUpSuccessfully () {
+		System.out.print("\n|--Registered Successfully--|\n\n");
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -45,7 +51,7 @@ public class accountSignup {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public int getAge() {
+	public byte getAge() {
 		return age;
 	}
 	public void setAge(byte age) {
@@ -55,6 +61,5 @@ public class accountSignup {
 	public String toString() {
 		return String.format("[first name: %s] [Last Name: %s] [Middle Name: %s] [Gender: %s] [Age: %d]", firstName, lastName, middleName, gender, age );
 	}
-	
-	
+
 }
