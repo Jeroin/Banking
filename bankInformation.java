@@ -2,7 +2,7 @@ package objectOriented.Banking;
 
 
 
-public class bankInformation {
+public class BankInformation {
 	
 	private String CardVerificationValue;
 	private int expirationDate;
@@ -12,7 +12,7 @@ public class bankInformation {
 	
 
 	//Creation
-	public bankInformation (String cardverificationValue, int expirationDate, int securityCode, String cardHolder){
+	public BankInformation (String cardverificationValue, int expirationDate, int securityCode, String cardHolder){
 		this.CardVerificationValue = cardverificationValue;
 		this.expirationDate = expirationDate;
 		this.securityCode = securityCode;

@@ -2,32 +2,32 @@ package objectOriented.Banking;
 
 import java.util.Scanner;
 
-public class bankMain {
+public class BankMain {
 
 	public static void main(String[] args) {
+		Scanner userInput = new Scanner(System.in);
 		
-		bankMain registration = new bankMain();
-		registration.pick();
+		BankMain registration = new BankMain();
+		registration.pick(userInput);
 		
 	}
 	
-	public void pick() {
-		Scanner userInput = new Scanner(System.in);
+	public void pick(Scanner userInput) {
+		
 		System.out.print("|--Menu--|\n[1] Register\n[2] Log in\n\nEnter the number you choose: ");
 		byte pick = userInput.nextByte();
+		
 		if(pick == 1) {
 			//Registration code
-			bankMain register = new bankMain();
-			register.signup();
+			BankMain register = new BankMain();
+			register.signup(userInput);
 		}else {
 			//Log in code
-			bankMain login = new bankMain();
-			login.signin();
+			BankMain login = new BankMain();
+			login.signin(userInput);
 		}
-		userInput.close();
 	}
-	public void signin() {
-		Scanner userInput = new Scanner(System.in);
+	public void signin(Scanner userInput) {
 		String firstName,middleName,lastName,gender;
 		byte age;
 		
@@ -44,22 +44,13 @@ public class bankMain {
 		System.out.print("Age: ");
 		age = userInput.nextByte();
 		
-		signIn account = new signIn(firstName,middleName,lastName,gender,age);
-		account.setFirstName(firstName);
-		account.setMiddleName(middleName);
-		account.setLastName(lastName);
-		account.setGender(gender);
-		account.setAge(age);
+		SignIn account = new SignIn(firstName,middleName,lastName,gender,age);
 		
 		account.signInSuccessfully();
 		System.out.println(account);
-		
-		userInput.close();
-		
 	}
 	
-	public void signup()  {
-		Scanner userInput = new Scanner(System.in);
+	public void signup(Scanner userInput)  {
 		String firstName,middleName,lastName,gender;
 		byte age;
 		
@@ -76,17 +67,12 @@ public class bankMain {
 		System.out.print("Age: ");
 		age = userInput.nextByte();			
 		
-		signUp account = new signUp(firstName,middleName,lastName,gender,age);
-		account.setFirstName(firstName);
-		account.setMiddleName(middleName);
-		account.setLastName(lastName);
-		account.setGender(gender);
-		account.setAge(age);
+		SignUp account = new SignUp(firstName,middleName,lastName,gender,age);
 		
 		account.signUpSuccessfully();
 		System.out.println(account);
 		
-		userInput.close();
+		
 	}
 
 			

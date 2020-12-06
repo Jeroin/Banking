@@ -1,6 +1,6 @@
 package objectOriented.Banking;
 
-public class signIn{
+public class SignIn{
 
      private String firstName;
 	 private String lastName;
@@ -8,7 +8,7 @@ public class signIn{
 	 private String gender;
 	 private byte age;
 	 
-public signIn(String firstName, String lastName, String middleName, String gender, byte age) {
+public SignIn(String firstName, String lastName, String middleName, String gender, byte age) {
 	this.firstName = firstName;
 	this.lastName = lastName;
 	this.middleName = middleName;

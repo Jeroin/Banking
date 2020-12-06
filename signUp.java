@@ -2,7 +2,7 @@ package objectOriented.Banking;
 
 //import java.util.Scanner;
 
-public class signUp{
+public class SignUp{
 	
 
 	 private String firstName;
@@ -12,7 +12,7 @@ public class signUp{
 	 private byte age;
 	 
 	 //Creation
-	 public signUp(String firstName, String lastName, String middleName, String gender, byte age) {
+	 public SignUp(String firstName, String lastName, String middleName, String gender, byte age) {
 		 this.firstName = firstName;
 		 this.lastName = lastName;
 		 this.middleName = middleName;
